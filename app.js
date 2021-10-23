@@ -55,7 +55,7 @@ function checkAuth(req, res, next) {
   }
 }
 
-// app.use('*',checkAuth);
+ app.use('*',checkAuth);
 app.use('/customers', CustomerController);
 app.get('/', function (req, res) {
   var pkg = require(path.join(__dirname, 'package.json'));
